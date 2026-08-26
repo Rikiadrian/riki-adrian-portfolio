@@ -106,3 +106,4 @@ atau `https://USERNAME.github.io/` jika menggunakan repository `USERNAME.github.
 ---
 
 © Riki Adrian — Dibuat dengan HTML, CSS, dan JavaScript murni.
+GitHub Pages deployment test.
