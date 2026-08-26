@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Security Infrastructure Monitoring using Zabbix | Riki Adrian</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Project case study: analysis and implementation of network infrastructure security monitoring using Zabbix with a MITRE ATT&CK-based approach." />
+  <meta name="author" content="Riki Adrian" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#070b14" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Security Infrastructure Monitoring using Zabbix | Riki Adrian" />
+  <meta property="og:description" content="Network infrastructure security monitoring using Zabbix, MikroTik, SNMP & MITRE ATT&CK approach." />
+
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../../style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#overview">Skip to main content</a>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar" id="navbar" aria-label="Main navigation">
+    <div class="container nav-container">
+      <a href="../../index.html" class="nav-logo mono">riki.adrian<span class="accent">()</span></a>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a class="nav-link active" href="#overview">Overview</a></li>
+        <li><a class="nav-link" href="#stack">Tech Stack</a></li>
+        <li><a class="nav-link" href="#highlights">Implementation</a></li>
+        <li><a class="nav-link" href="#approach">Approach</a></li>
+        <li><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li><a class="nav-link" href="../../index.html#contact">Contact</a></li>
+      </ul>
+
+      <button class="hamburger" id="nav-toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============ PROJECT HERO ============ -->
+  <header class="hero project-hero" style="min-height: auto;">
+    <div class="container hero-inner" style="grid-template-columns: 1fr;">
+      <div class="hero-content">
+        <p class="greeting mono reveal">// Featured Project</p>
+        <h1 class="reveal d1" style="font-size: clamp(1.9rem, 5vw, 3rem);">
+          Security Infrastructure Monitoring<br />using Zabbix<span class="accent">.</span>
+        </h1>
+        <p class="tagline reveal d2">
+          Analysis and implementation of a network infrastructure security monitoring system
+          to monitor network conditions and identify security activities/anomalies
+          based on a MITRE ATT&amp;CK-oriented approach.
+        </p>
+        <div class="tag-row reveal d3" style="margin-bottom: 28px;">
+          <span class="badge mono">Zabbix</span>
+          <span class="badge mono">MikroTik</span>
+          <span class="badge mono">SNMP</span>
+          <span class="badge mono">CentOS</span>
+          <span class="badge mono">Kali Linux</span>
+          <span class="badge mono">MITRE ATT&amp;CK</span>
+          <span class="badge mono">Network Security</span>
+        </div>
+        <div class="hero-actions reveal d4">
+          <a class="btn btn-outline" href="../../index.html">
+            <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            Back to Portfolio
+          </a>
+          <a class="btn btn-primary" href="../../index.html#contact">Contact Me</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ OVERVIEW ============ -->
+    <section id="overview" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker mono">// Overview</p>
+          <h2>About This Project</h2>
+        </div>
+
+        <div class="project-card" style="align-items: start;">
+          <div class="project-info">
+            <p class="project-desc" style="max-width: none;">
+              This project was developed during my internship at
+              <strong>Diskominfo Cilacap</strong>. It focuses on analyzing and implementing
+              a monitoring solution for network infrastructure using
+              <strong>Zabbix</strong> as the central platform. The goal is to keep the
+              network observable &mdash; tracking device availability, interface traffic,
+              and resource usage &mdash; while organizing monitoring items through a
+              <strong>MITRE ATT&amp;CK</strong>-oriented view so that network telemetry can be
+              connected to potential security-relevant activity.
+            </p>
+            <p class="project-desc" style="max-width: none;">
+              MikroTik RouterOS devices are monitored via <strong>SNMP</strong>, and alerts are
+              configured for abnormal conditions such as unreachable hosts or unusual traffic
+              patterns, supporting day-to-day network security monitoring activities.
+            </p>
+          </div>
+
+          <aside class="detail-box" style="padding: 26px;">
+            <h4 class="mono">// At a Glance</h4>
+            <ul>
+              <li><strong style="color: var(--text);">Role:</strong> Network &amp; Security Monitoring Intern</li>
+              <li>Type: Infrastructure Monitoring Implementation</li>
+              <li>Platform: Zabbix on CentOS</li>
+              <li>Devices: MikroTik RouterOS (via SNMP)</li>
+              <li>Framework: MITRE ATT&amp;CK (monitoring perspective)</li>
+              <li>Focus Area: Network Security Monitoring</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TECH STACK ============ -->
+    <section id="stack" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker mono">// Tech Stack</p>
+          <h2>Tools &amp; Technologies</h2>
+        </div>
+
+        <div class="exp-grid">
+          <article class="exp-card reveal"><h3 class="mono accent">Zabbix</h3><p class="exp-desc">Open-source monitoring platform used as the central system for metrics, triggers, and dashboards.</p></article>
+          <article class="exp-card reveal d1"><h3 class="mono accent">MikroTik RouterOS</h3><p class="exp-desc">Network device monitored for availability, traffic, and resource usage.</p></article>
+          <article class="exp-card reveal d2"><h3 class="mono accent">SNMP</h3><p class="exp-desc">Protocol used by Zabbix to collect telemetry data from network devices.</p></article>
+          <article class="exp-card reveal"><h3 class="mono accent">CentOS</h3><p class="exp-desc">Server operating system hosting the Zabbix server and its components.</p></article>
+          <article class="exp-card reveal d1"><h3 class="mono accent">Kali Linux</h3><p class="exp-desc">Workstation used for testing and validating the monitoring setup.</p></article>
+          <article class="exp-card reveal d2"><h3 class="mono accent">MITRE ATT&amp;CK</h3><p class="exp-desc">Knowledge framework used as a reference perspective for organizing security-focused monitoring items.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ IMPLEMENTATION HIGHLIGHTS ============ -->
+    <section id="highlights" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker mono">// Implementation</p>
+          <h2>Implementation Highlights</h2>
+        </div>
+
+        <article class="exp-main reveal">
+          <ul class="exp-list">
+            <li>Deployed and configured <strong>Zabbix</strong> on a <strong>CentOS</strong> server as the central monitoring platform.</li>
+            <li>Added <strong>MikroTik RouterOS</strong> devices as monitored hosts using <strong>SNMP</strong>.</li>
+            <li>Collected metrics for device availability, interface traffic, and resource usage.</li>
+            <li>Configured triggers and notifications for abnormal conditions (e.g., host down, unusual traffic).</li>
+            <li>Organized monitoring items following a <strong>MITRE ATT&amp;CK</strong>-oriented perspective to support security monitoring.</li>
+            <li>Validated the setup from a <strong>Kali Linux</strong> workstation.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ MONITORING APPROACH ============ -->
+    <section id="approach" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker mono">// Approach</p>
+          <h2>Monitoring Approach</h2>
+        </div>
+
+        <div class="exp-grid">
+          <article class="exp-card reveal">
+            <h3 class="mono accent">1 &mdash; Collect</h3>
+            <p class="exp-desc">
+              Gather network telemetry from infrastructure devices using SNMP:
+              uptime, interface status, bandwidth, and system resources.
+            </p>
+          </article>
+          <article class="exp-card reveal d1">
+            <h3 class="mono accent">2 &mdash; Baseline</h3>
+            <p class="exp-desc">
+              Establish what "normal" looks like for the network so deviations
+              in traffic or availability become easier to notice.
+            </p>
+          </article>
+          <article class="exp-card reveal d2">
+            <h3 class="mono accent">3 &mdash; Detect &amp; Review</h3>
+            <p class="exp-desc">
+              Trigger alerts on abnormal conditions and review events with a
+              MITRE ATT&amp;CK-oriented mindset to connect them to potential adversary behavior.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker mono">// Gallery</p>
+          <h2>Screenshots</h2>
+          <p class="lead">Replace the boxes below with your own screenshots when available.</p>
+        </div>
+
+        <div class="exp-grid project-gallery">
+          <!-- Replace these visual cards with real screenshots when available -->
+          <div class="dashboard-preview reveal" aria-label="Illustration of a Zabbix monitoring dashboard">
+            <div class="preview-top mono"><span>zabbix / dashboard</span><span class="preview-live">● LIVE</span></div>
+            <div class="preview-body">
+              <div class="preview-chart"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+              <div class="preview-metrics"><b>HOSTS <em>3</em></b><b>SNMP <em>UP</em></b><b>ALERTS <em>REVIEW</em></b></div>
+            </div>
+          </div>
+          <div class="dashboard-preview reveal d1" aria-label="Illustration of network monitoring status">
+            <div class="preview-top mono"><span>network / overview</span><span>SNMP</span></div>
+            <div class="preview-body">
+              <div class="node-map"><span class="node">ZBX</span><i></i><span class="node">GW</span><i></i><span class="node">LAN</span></div>
+              <div class="preview-log mono"><p>[OK] host availability</p><p>[OK] interface telemetry</p><p>[INFO] event requires review</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section section-alt">
+      <div class="container" style="text-align: center;">
+        <div class="section-head reveal" style="margin-bottom: 28px;">
+          <h2>Want to know more about me?</h2>
+          <p class="lead" style="margin-inline: auto;">Check my full portfolio or download my CV.</p>
+        </div>
+        <div class="contact-actions reveal" style="justify-content: center;">
+          <a class="btn btn-primary" href="../../index.html">Back to Portfolio</a>
+          <a class="btn btn-outline" href="../../index.html#contact">Request CV</a>
+          <a class="btn btn-ghost" href="mailto:rikiadrian058@gmail.com">Email Me</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Riki Adrian. All rights reserved.</p>
+      <p class="mono">&lt;/&gt; Built with plain HTML, CSS &amp; JavaScript</p>
+    </div>
+  </footer>
+
+  <button id="to-top" class="to-top" type="button" aria-label="Scroll back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="../../script.js"></script>
+</body>
+</html>
